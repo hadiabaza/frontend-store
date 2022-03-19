@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { useCart } from './useCart';
 
 function App() {
+  const cart = useCart();
   return (
     <div className="App">
       <header className="App-header">
