@@ -47,3 +47,9 @@ export class Cart {
         return this.items.length;
     }
 }
+
+const item = new Cart();
+item.addItem({productName:'orange', id: 2, price: 5})
+item.addItem({productName:'apple', id: 3, price: 10 })
+item.addItem({productName:'apple', id: 3, price: 10 })
+// console.log({quantity: item.quantity, total: item.total})

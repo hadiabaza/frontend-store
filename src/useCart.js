@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Cart } from "./Cart";
+// import {useEffect} from "react"
 
 
 const cart = new Cart();
@@ -8,6 +9,7 @@ export const useCart = () => {
     const [quantity, setQuantity] = useState(cart.quantity)
     const [total, setTotal] = useState(cart.total)
 
+    
     const addItem = (product) => {
         cart.addItem(product);
         refreshState();
