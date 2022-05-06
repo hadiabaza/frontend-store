@@ -22,7 +22,7 @@ export class Cart {
     }
 
     decrementItem({id}) {
-        let item = this.items.find(item => item.id === id)
+        let item = this.items.find(item => item.id === id) 
         if(item) {
             if(item.quantity > 1) {
                 item.quantity--;

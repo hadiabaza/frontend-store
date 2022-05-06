@@ -1,7 +1,7 @@
 import {useCart} from './Cart.js'
 
 function Checkout ({cart}) {
-    console.log(cart.items)
+    console.log('hello')
     return (
         <div>{cart.items}</div>
     ) 
