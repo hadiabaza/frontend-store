@@ -1,6 +1,7 @@
-import {useCart} from './Cart.js'
+import { useCart } from './useCart'
 
-function Checkout ({cart}) {
+function Checkout () {
+    const cart = useCart()
     console.log('hello')
     return (
         <div>{cart.items}</div>
